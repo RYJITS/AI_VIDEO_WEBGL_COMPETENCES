@@ -42,6 +42,17 @@ Note licence: aucune licence open source definitive n'est encore declaree. Voir 
 
 ---
 
+## Documentation Complementaire
+
+| Fichier | Role |
+|---|---|
+| `docs/PROJECT_MAP.md` | Carte du depot, composants principaux et ordre de lecture recommande |
+| `docs/LOCAL_VALIDATION.md` | Checklist de validation locale avant commit ou pull request |
+
+Ces deux guides servent de point d'entree rapide pour comprendre le depot et verifier une contribution sans chercher dans tous les rapports techniques.
+
+---
+
 ## Apercu Visuel Des Tests
 
 ### Comparaison Des Steps

@@ -22,6 +22,8 @@ jobs:
             "CONTRIBUTING.md",
             "SECURITY.md",
             "CITATION.cff",
+            "docs/PROJECT_MAP.md",
+            "docs/LOCAL_VALIDATION.md",
             "examples/README.md",
             "codex-skills/video-start-end/SKILL.md",
             "codex-skills/webgl-right-video/SKILL.md",
