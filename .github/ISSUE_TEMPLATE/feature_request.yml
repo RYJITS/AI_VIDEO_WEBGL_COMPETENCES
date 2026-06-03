@@ -1,0 +1,36 @@
+name: Feature request
+description: Proposer une amelioration du kit, des skills, des presets ou des exemples.
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: Besoin
+      description: Quel probleme cette amelioration resout-elle ?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposition
+      description: Decris la solution souhaitee.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Zone concernee
+      options:
+        - Documentation
+        - Skill Codex
+        - Competence Cerveau
+        - Workflow ComfyUI
+        - Exemple video/contact sheet
+        - WebGL integration
+        - Script installation
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation attendue
+      description: Comment saurons-nous que l'amelioration fonctionne ?

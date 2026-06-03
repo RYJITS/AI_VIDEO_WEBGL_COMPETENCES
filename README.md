@@ -26,6 +26,22 @@ Le prompt seul ne suffit pas pour une transformation complexe comme `cube -> vis
 
 ---
 
+## GitHub Et Contribution
+
+| Fichier | Role |
+|---|---|
+| `CONTRIBUTING.md` | Regles de contribution, style et verification |
+| `SECURITY.md` | Signaler un probleme de securite ou un secret expose |
+| `CITATION.cff` | Metadata de citation pour GitHub |
+| `docs/LICENSING.md` | Options de licence a choisir explicitement |
+| `.github/ISSUE_TEMPLATE/` | Templates bug / feature |
+| `.github/pull_request_template.md` | Checklist PR |
+| `.github/workflows/validate-repo.yml` | Validation GitHub Actions des fichiers requis et JSON |
+
+Note licence: aucune licence open source definitive n'est encore declaree. Voir `docs/LICENSING.md` avant reutilisation ou redistribution large.
+
+---
+
 ## Apercu Visuel Des Tests
 
 ### Comparaison Des Steps

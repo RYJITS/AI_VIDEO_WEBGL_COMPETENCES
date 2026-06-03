@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If this repository helps your AI video/WebGL workflow, please cite it using this metadata."
+title: "AI Video WebGL Competences"
+authors:
+  - name: "RYJITS"
+repository-code: "https://github.com/RYJITS/AI_VIDEO_WEBGL_COMPETENCES"
+abstract: "A practical kit for AI video generation from start/end images, Wan/LTX transition testing, Codex skills, Cerveau competence, and WebGL scroll-video integration."
+keywords:
+  - ai-video
+  - webgl
+  - comfyui
+  - wan2.2
+  - ltx
+  - codex-skills
+date-released: "2026-06-03"

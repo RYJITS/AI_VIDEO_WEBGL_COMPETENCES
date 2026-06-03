@@ -1,0 +1,40 @@
+name: Bug report
+description: Signaler un probleme reproductible dans les docs, scripts, workflows ou exemples.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Probleme
+      description: Decris ce qui ne fonctionne pas.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction
+      description: Commandes, fichier ou workflow concerne.
+      placeholder: |
+        1. Ouvrir ...
+        2. Executer ...
+        3. Observer ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Resultat attendu
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environnement
+      description: Windows, GPU, ComfyUI, Python, Node, modele utilise.
+      placeholder: "Windows 11, RTX 4070, ComfyUI ..., Python ..., Node ..."
+  - type: textarea
+    id: media
+    attributes:
+      label: Capture, contact sheet ou logs utiles
+      description: Coller seulement des logs sans secrets.

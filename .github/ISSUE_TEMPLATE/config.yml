@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Documentation principale
+    url: https://github.com/RYJITS/AI_VIDEO_WEBGL_COMPETENCES#readme
+    about: Lire le README avant d'ouvrir une issue.
