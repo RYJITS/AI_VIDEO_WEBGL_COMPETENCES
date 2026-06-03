@@ -1,18 +1,114 @@
 ﻿# AI Video WebGL Competences
 
-Depot simple et reutilisable pour creer des videos IA avec image de debut + image de fin, puis les integrer dans un site WebGL/scroll video avec animation cadree a droite.
+> Kit pratique pour generer des videos IA avec **image de debut + image de fin**, tester les transitions Wan/LTX, puis integrer les meilleurs resultats dans une experience **WebGL / scroll video 16:9**.
 
-Ce depot n'est pas une archive brute de tous les tests. Il garde seulement les exemples concrets, les conclusions, les workflows utiles et les competences installables.
+Ce depot n'est pas une archive brute. C'est une synthese exploitable de nos tests: ce qui a marche, ce qui a echoue, les reglages utiles, les competences Codex/Cerveau et quelques exemples concrets.
 
-## Ce Que Contient Le Depot
+---
 
-- `codex-skills/` : deux skills installables dans Codex.
-- `cerveau-competence/` : competence partagee pour le cerveau central `D:\00_Cerveau_IA` et les autres IA.
-- `examples/videos/` : quelques videos temoins legeres.
-- `examples/contact-sheets/` : comparaisons visuelles et preuves QA.
-- `examples/workflows/` : workflows JSON ComfyUI/Wan2.2 utiles pour reproduire les tests.
-- `docs/` : rapports courts et conclusions techniques.
-- `scripts/` : scripts d'installation des skills, de la competence et des modeles Wan2.2.
+## Resultat En Une Phrase
+
+La meilleure strategie trouvee est: **storyboard en keyframes propres -> microclips image start/end -> Wan2.2/LTX local -> QA visuelle -> integration WebGL avec animation cadree a droite**.
+
+Le prompt seul ne suffit pas pour une transformation complexe comme `cube -> visage -> oeil -> cerveau`. Il faut decouper.
+
+---
+
+## Ce Que Vous Pouvez Installer
+
+| Element | Dossier | Utilite |
+|---|---|---|
+| Skill Codex `video-start-end` | `codex-skills/video-start-end` | Generer une video avec image de debut + image de fin |
+| Skill Codex `webgl-right-video` | `codex-skills/webgl-right-video` | Creer des videos 16:9 pour site WebGL, sujet a droite |
+| Competence Cerveau | `cerveau-competence/competence-video-start-end-webgl` | Competence partagee pour toutes les IA du cerveau central |
+| Scripts install | `scripts/` | Installer skills, competence et modeles Wan2.2 |
+| Exemples | `examples/` | Videos temoins, contact sheets, workflows ComfyUI |
+
+---
+
+## Apercu Visuel Des Tests
+
+### Comparaison Des Steps
+
+![Comparaison steps Wan2.2](examples/contact-sheets/c2r-v9-step-sweep-01a-comparison-full.jpg)
+
+Conclusion: `10` et `12` steps restent trop mous. `14` steps devient exploitable. `16` steps est le meilleur compromis qualite/temps. `18/20` steps apportent peu en plus sur nos clips courts.
+
+### Timeline Microclips
+
+![Timeline microclips](examples/contact-sheets/c2r-v9-micro-pilot-timeline-contact-sheet.jpg)
+
+Conclusion: decouper une grande transformation en microclips donne beaucoup plus de controle que demander toute la sequence en une seule generation.
+
+### Probleme Du Masque Noir
+
+![Occlusion zone noire](examples/contact-sheets/c2r-v9-occlusion-test-01a-vs-clean.jpg)
+
+Conclusion: ne pas integrer un grand rectangle noir dur dans la video. Le modele peut le traiter comme une surface devant l'animation. Pour le site, il vaut mieux une video 16:9 sombre continue, avec le sujet a droite, et laisser le WebGL/CSS gerer le fond gauche.
+
+---
+
+## Videos Temoins Incluses
+
+| Exemple | Ce Que Ca Montre |
+|---|---|
+| `examples/videos/scene-01a-start-only.mp4` | Test avec image de depart seule: plus libre, mais derive vite |
+| `examples/videos/scene-01b-start-end.mp4` | Test avec image debut + image fin: meilleur controle du but |
+| `examples/videos/c2r-v9-step-sweep-01a-steps10-fps12.mp4` | Reglage rapide, utile pour tester le mouvement, qualite faible |
+| `examples/videos/c2r-v9-step-sweep-01a-steps14-fps12.mp4` | Premier seuil vraiment exploitable |
+| `examples/videos/c2r-v9-step-sweep-01a-steps16-fps12.mp4` | Meilleur compromis observe |
+| `examples/videos/c2r-v9-quality33-test-01a.mp4` | Test court qualitatif 33 frames |
+| `examples/videos/c2r-v9-clean-composition-test-01a.mp4` | Test de composition plus propre |
+| `examples/videos/c2r-v9-micro-pilot-01.mp4` | Exemple de sequence pilote en microclips |
+
+---
+
+## Reglages Retenus
+
+| # | Preset | Objectif | Reglage | Duree video | Temps estime |
+|---|---|---|---|---|---|
+| 1 | `rapid` | Tester transitions | 33 frames / 12 fps / 10 steps | 2.75 s | 5-6 min par microclip |
+| 2 | `mobile` | Qualite mobile | 33 frames / 12 fps / 14 steps | 2.75 s | 6-7 min |
+| 3 | `desktop` | Qualite desktop | 49 frames / 24 fps / 16 steps | 2.04 s | 10-13 min |
+| 4 | `optimum` | Court, net, valide | 33 frames / 24 fps / 14 steps | 1.375 s | 6-7 min |
+
+Le preset `optimum` est volontairement court: il sert a obtenir une transformation nette au scroll, pas une longue video narrative.
+
+---
+
+## Resultats Des Tests
+
+| Test | Resultat | Decision |
+|---|---|---|
+| Prompt seul | Trop aleatoire sur les transformations complexes | Abandon pour les sequences importantes |
+| Image de depart seule | Bon pour exploration, mais derive de style et forme | Utile seulement en brouillon |
+| Image debut + image fin | Meilleur controle de la destination | Methode retenue |
+| Alpha transparent | Trop instable, resultats proches d'images alpha animees | Abandon pour la version principale |
+| Video 16:9 avec noir a gauche | Risque d'occlusion/masque noir devant l'animation | A eviter |
+| Video 16:9 sombre continue, sujet a droite | Plus naturel pour WebGL et scroll | Methode retenue |
+| 10 steps | Rapide mais flou | Preset test uniquement |
+| 14 steps | Premier seuil net/exploitable | Preset mobile/optimum |
+| 16 steps | Meilleur compromis qualite/temps | Preset desktop |
+| Microclips | Plus de controle et meilleurs raccords | Methode retenue |
+
+---
+
+## Conclusion Principale
+
+Pour obtenir un rendu professionnel, il manque rarement un seul "meilleur prompt". Ce qui manque le plus souvent, c'est une **structure de production**:
+
+1. Ecrire le storyboard.
+2. Estimer la complexite.
+3. Generer les keyframes.
+4. Decouper en microclips.
+5. Generer start/end.
+6. Comparer les steps.
+7. Garder seulement les meilleurs clips.
+8. Integrer dans WebGL avec transitions deterministes.
+
+C'est exactement ce que les deux skills et la competence automatisent.
+
+---
 
 ## Installation Rapide
 
@@ -20,103 +116,115 @@ Ce depot n'est pas une archive brute de tous les tests. Il garde seulement les e
 git clone <URL_DU_REPO>
 cd AI_VIDEO_WEBGL_COMPETENCES
 
-# Installer les skills Codex
 powershell -ExecutionPolicy Bypass -File scripts/install-codex-skills.ps1
-
-# Installer la competence Cerveau
 powershell -ExecutionPolicy Bypass -File scripts/install-cerveau-competence.ps1 -CerveauRoot D:\00_Cerveau_IA
+```
 
-# Installer le profil modele conseille pour commencer: Wan2.2 TI2V 5B
+Installer les modeles Wan2.2 dans ComfyUI:
+
+```powershell
 powershell -ExecutionPolicy Bypass -File scripts/install-wan22-models.ps1 -ComfyUIRoot "D:\ComfyUI\ComfyUI" -Profile ti2v5b
 ```
 
-Adapte `-ComfyUIRoot` au dossier qui contient `models/`, par exemple:
+Pour le profil plus qualitatif:
 
 ```powershell
-D:\00_Cerveau_IA\Conpetances\Video\ComfyUI\ComfyUI_windows_portable\ComfyUI
+powershell -ExecutionPolicy Bypass -File scripts/install-wan22-models.ps1 -ComfyUIRoot "D:\ComfyUI\ComfyUI" -Profile i2v14b
 ```
 
-## Les Deux Skills Codex
+---
 
-### `video-start-end`
+## Modeles Recommandes
 
-Pour generer une video a partir d'une image de debut et d'une image de fin.
+| Profil | Modeles | Usage |
+|---|---|---|
+| `ti2v5b` | `wan2.2_ti2v_5B_fp16`, `wan2.2_vae`, `umt5_xxl_fp8` | Demarrage, tests rapides, machine plus modeste |
+| `i2v14b` | `wan2.2_i2v_high_noise_14B_fp8_scaled`, `wan2.2_i2v_low_noise_14B_fp8_scaled`, `wan_2.1_vae`, `umt5_xxl_fp8` | Meilleur controle image-to-video, plus lourd |
 
-Utilisation typique:
+Sources utiles:
+
+- ComfyUI Wan2.2 docs: https://docs.comfy.org/tutorials/video/wan/wan2_2
+- ComfyUI Wan2.2 examples: https://comfyanonymous.github.io/ComfyUI_examples/wan22/
+- Wan2.2 officiel: https://github.com/Wan-Video/Wan2.2
+
+---
+
+## Comment Appeler Les Competences
+
+### Dans Codex
 
 ```text
-Utilise la competence video-start-end pour transformer cette image start vers cette image end. Propose les 4 presets puis estime le temps.
+Utilise video-start-end pour creer une video avec cette image de debut et cette image de fin. Propose les 4 presets et estime le temps.
 ```
-
-### `webgl-right-video`
-
-Pour creer une video 16:9 pensee pour un site WebGL: animation sur la droite, gauche reservee au texte/UI/WebGL.
-
-Utilisation typique:
 
 ```text
-Utilise webgl-right-video pour creer une sequence 16:9: fond sombre continu, animation dans les deux tiers droits, pas de masque noir dur.
+Utilise webgl-right-video pour creer une video 16:9 avec animation dans les deux tiers droits, fond sombre continu, sans masque noir dur.
 ```
 
-## Competence Cerveau
-
-La competence partagee se trouve dans:
-
-```text
-cerveau-competence/competence-video-start-end-webgl/
-```
-
-Une fois installee dans `D:\00_Cerveau_IA\Conpetances\Video`, elle expose un estimateur:
+### Dans Le Cerveau Central
 
 ```powershell
 cd D:\00_Cerveau_IA\Conpetances
 npm run competence:video:estimate -- --sections 10 --complexity complex --preset desktop
 ```
 
-## Presets Retenus
+Exemple de sortie attendue:
 
-| # | Preset | Usage | Reglage | Temps estime |
-|---|---|---|---|---|
-| 1 | `rapid` | Tester les transitions | 33 frames / 12 fps / 10 steps | 5-6 min par microclip |
-| 2 | `mobile` | Qualite mobile | 33 frames / 12 fps / 14 steps | 6-7 min |
-| 3 | `desktop` | Qualite desktop | 49 frames / 24 fps / 16 steps | 10-13 min |
-| 4 | `optimum` | Optimum court valide | 33 frames / 24 fps / 14 steps | 6-7 min |
+```text
+Sections: 10
+Complexity: complex
+Preset: Qualite desktop
+Keyframes: 50
+Micro-clips: 40
+Settings: 49f/24fps/16steps
+Gen time: environ 6h40 - 8h40
+```
 
-## Conclusions Des Tests
+---
 
-1. Le prompt seul ne suffit pas pour une transformation complexe.
-2. Les meilleurs resultats viennent de microclips avec images start/end et keyframes intermediaires.
-3. Le seuil de nettete acceptable commence autour de 14 steps sur nos tests 33 frames.
-4. 16 steps est le meilleur compromis desktop.
-5. 20 steps ameliore peu la qualite par rapport au temps supplementaire.
-6. Il faut eviter les mots comme `particles`, `dust`, `smoke`, `haze`, `liquid morph`, `soft dissolve` si l'on veut une transformation nette.
-7. Il faut preferer: plaques graphite rigides, fragments solides, bords nets, fissures ambre, assemblage mecanique.
-8. Pour WebGL, ne pas integrer un panneau noir dur dans la video: il peut couper l'animation visuellement.
-9. La bonne strategie WebGL est une video 16:9 sombre continue, avec sujet dans les deux tiers droits, et texte/UI/WebGL par-dessus cote gauche.
+## Workflow Recommande Pour Un Nouveau Storyboard
 
-## Modeles Conseilles
+```mermaid
+flowchart TD
+  A[Storyboard texte ou images] --> B[Estimation complexite]
+  B --> C[Generation keyframes]
+  C --> D[Validation visuelle]
+  D --> E[Microclips start/end]
+  E --> F[Test rapid]
+  F --> G{Transition lisible ?}
+  G -- Non --> C
+  G -- Oui --> H[Preset mobile/desktop/optimum]
+  H --> I[QA contact sheet]
+  I --> J[Integration WebGL]
+```
 
-Pour commencer simplement:
+---
 
-- Wan2.2 TI2V 5B: plus leger, text-to-video + image-to-video, bon pour tests et machines modestes.
+## Regles De Prompt Qui Ont Fonctionne
 
-Pour meilleure coherence image debut/image fin:
+### Eviter
 
-- Wan2.2 I2V 14B high/low noise: plus lourd, meilleur pour transitions controlees, demande plus de VRAM/RAM/offload.
+```text
+particles, dust, smoke, haze, fog, liquid morph, soft dissolve, energy cloud, abstract transformation
+```
 
-Voir `INSTALLATION.md` pour les commandes de telechargement et les sources officielles.
+### Preferer
 
-## Exemples Inclus
+```text
+hard-edged graphite plates, rigid black metal fragments, precise amber seams, mechanical assembly, solid geometric chunks, crisp engraved panels, clean cinematic lighting
+```
 
-- `scene-01a-start-only.mp4` : test avec image de depart seule.
-- `scene-01b-start-end.mp4` : test avec image de debut + image de fin.
-- `c2r-v9-step-sweep-01a-steps10-fps12.mp4` : rapide mais trop flou.
-- `c2r-v9-step-sweep-01a-steps14-fps12.mp4` : premier seuil correct.
-- `c2r-v9-step-sweep-01a-steps16-fps12.mp4` : meilleur compromis.
-- `c2r-v9-quality33-test-01a.mp4` : test plus qualitatif.
-- `c2r-v9-clean-composition-test-01a.mp4` : test composition propre.
-- `c2r-v9-micro-pilot-01.mp4` : micro-sequence pilote.
+---
 
-## Licence / Note
+## Pourquoi Ce Kit Est Utile
 
-Ce depot est un kit de travail. Les modeles IA ne sont pas inclus. Il faut les telecharger depuis leurs sources officielles ou compatibles ComfyUI.
+Il evite de refaire les memes erreurs:
+
+- croire qu'un prompt suffit;
+- faire une video trop longue d'un coup;
+- integrer une zone noire dure dans la video;
+- confondre nombre de frames, FPS et duree de generation;
+- monter les steps sans mesurer le gain reel;
+- oublier la QA visuelle.
+
+Le but est simple: **tester vite, valider proprement, generer seulement ce qui vaut la peine**.
