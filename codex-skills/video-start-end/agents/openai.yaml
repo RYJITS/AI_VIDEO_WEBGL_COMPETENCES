@@ -1,0 +1,7 @@
+interface:
+  display_name: "Video Start/End"
+  short_description: "Generate video from start/end keyframes"
+  brand_color: "#F5A524"
+  default_prompt: "Use $video-start-end to plan and generate a local start-image/end-image video workflow."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,57 @@
+{
+  "variant": "c2r-v9-clean-composition-test",
+  "generatedAt": "2026-06-02T18:50:52.363Z",
+  "options": {
+    "only": "05",
+    "frames": 49,
+    "fps": 24,
+    "steps": 8,
+    "cfg": 3,
+    "scale": 0.78,
+    "overwrite": false,
+    "dryRun": true
+  },
+  "sourceManifestPath": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\docs\\C2R_V9_MICRO_PILOT_MANIFEST.json",
+  "processedKeyframeDir": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-clean-composition-test\\normalized",
+  "scene": {
+    "id": "05",
+    "title": "Solidify with hexagonal protection",
+    "clips": [
+      {
+        "id": "05a",
+        "start": "section-04-02-neural-superhighways.png",
+        "end": "section-05-01-hex-shield-emerging.png",
+        "seed": 250910,
+        "prompt": "Full-width cinematic realistic premium protection sequence on a pure black void. The full 16:9 background is continuous cinematic black, not a vertical black panel. In the right two thirds, the fast neural superhighway system begins to solidify. Transparent amber hexagonal cells appear around the flow, graphite connector nodes lock into place, and a partial protective shell grows outward while energy keeps moving inside. No text, no HUD, no symbols. The subject is smaller than before, clearly separated from the left text zone, and never touches the center boundary. The transformation is sharp, crisp, physical, and readable frame by frame: plates, fibers, cells, nodes, and energy paths move as distinct solid elements. No blur transition, no soft dissolve, no foggy morph, no smeared interpolation, no defocus, no crossfade.",
+        "startImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-clean-composition-test\\normalized\\05a-start.png",
+        "endImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-clean-composition-test\\normalized\\05a-end.png",
+        "output": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-clean-composition-test\\clips\\c2r-v9-clean-composition-test-05a.mp4",
+        "workflowJson": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\docs\\c2r-v9-clean-composition-test-workflows\\c2r-v9-clean-composition-test-05a.json",
+        "reused": true,
+        "scene": "05",
+        "skipped": true
+      },
+      {
+        "id": "05b",
+        "start": "section-05-01-hex-shield-emerging.png",
+        "end": "section-05-02-protective-dome.png",
+        "seed": 250911,
+        "prompt": "Full-width cinematic realistic premium fortification sequence on a pure black void. The full 16:9 background is continuous cinematic black, not a vertical black panel. In the right two thirds, the partial amber hexagonal shield expands and closes into a complete luminous protective dome around the intelligent neural system. Hex cells connect, reinforcement nodes lock, and the inner energy continues flowing safely. Smooth dome construction, no text, no HUD, no logo. The subject is smaller than before, clearly separated from the left text zone, and never touches the center boundary. The transformation is sharp, crisp, physical, and readable frame by frame: plates, fibers, cells, nodes, and energy paths move as distinct solid elements. No blur transition, no soft dissolve, no foggy morph, no smeared interpolation, no defocus, no crossfade.",
+        "startImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-clean-composition-test\\normalized\\05b-start.png",
+        "endImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-clean-composition-test\\normalized\\05b-end.png",
+        "output": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-clean-composition-test\\clips\\c2r-v9-clean-composition-test-05b.mp4",
+        "workflowJson": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\docs\\c2r-v9-clean-composition-test-workflows\\c2r-v9-clean-composition-test-05b.json",
+        "reused": true,
+        "scene": "05",
+        "skipped": true
+      }
+    ],
+    "output": {
+      "sceneVideo": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-clean-composition-test\\c2r-v9-clean-composition-test-05.mp4",
+      "frameDir": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\frames\\c2r-v9-clean-composition-test\\05",
+      "concatList": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-clean-composition-test\\concat-05.txt",
+      "frameCount": 98,
+      "dryRun": true
+    }
+  }
+}

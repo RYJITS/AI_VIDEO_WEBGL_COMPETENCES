@@ -1,0 +1,363 @@
+{
+  "variant": "c2r-v9-micro-pilot",
+  "generatedAt": "2026-06-02T08:58:58.070Z",
+  "quality": {
+    "width": 1024,
+    "height": 576,
+    "frames": 33,
+    "fps": 12,
+    "steps": 8,
+    "cfg": 3
+  },
+  "negative": "readable text, fake text, micro text, letters, numbers, labels, logo, watermark, HUD, interface, symbols that look like writing, cyberpunk city, neon city, buildings, bright left side, subject on left, hard cut, instant replacement, simple crossfade, static dissolve, jitter, flicker, low quality, blurry, distorted anatomy, extra eyes, extra face, duplicate head",
+  "keyframeDir": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized",
+  "videoRoot": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot",
+  "frameRoot": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\frames\\c2r-v9-micro-pilot",
+  "scenes": [
+    {
+      "id": "01",
+      "title": "Cube decomposition and human head reconstruction",
+      "clips": [
+        {
+          "id": "01a",
+          "start": "section-01-00-cube-active.png",
+          "end": "section-01-01-cube-fracture.png",
+          "seed": 250901,
+          "prompt": "Full-width cinematic realistic premium transformation on a pure black void. The entire left half remains uniform empty black. On the right half, the activated graphite cube does not dissolve: its engraved metal plates unlock, separate, and break into hundreds of graphite shards. Amber fissures stretch into energy filaments between fragments. The cube is still partially recognizable while its right side physically decomposes into orbiting pieces. Smooth mechanical motion, stable camera, no text.",
+          "startImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-01-00-cube-active.png",
+          "endImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-01-01-cube-fracture.png",
+          "output": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\clips\\c2r-v9-micro-01a.mp4",
+          "workflowJson": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\docs\\c2r-v9-micro-workflows\\c2r-v9-micro-01a.json",
+          "reused": true
+        },
+        {
+          "id": "01b",
+          "start": "section-01-01-cube-fracture.png",
+          "end": "section-01-02-head-reconstruction.png",
+          "seed": 250902,
+          "prompt": "Full-width cinematic realistic premium transformation on a pure black void. The left half stays pure empty black. On the right half, hundreds of graphite cube fragments and amber fiber filaments spiral forward in controlled motion. The fragments do not simply fade: they assemble into a humanoid skull and unfinished face. Plates lock into cheekbones, brow, jaw, and neck while amber neural fibers grow inside. Smooth continuous reconstruction, stable camera, no text.",
+          "startImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-01-01-cube-fracture.png",
+          "endImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-01-02-head-reconstruction.png",
+          "output": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\clips\\c2r-v9-micro-01b.mp4",
+          "workflowJson": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\docs\\c2r-v9-micro-workflows\\c2r-v9-micro-01b.json",
+          "reused": true
+        },
+        {
+          "id": "01c",
+          "start": "section-01-02-head-reconstruction.png",
+          "end": "section-01-03-head-complete.png",
+          "seed": 250903,
+          "prompt": "Full-width cinematic realistic premium transformation on a pure black void. The left half remains pure black and empty. On the right half, the unfinished graphite humanoid head completes its reconstruction: remaining fragments lock into the face, skin plates align, eyes ignite amber, and optical-fiber brain paths stabilize under the skull. The motion ends as a complete realistic graphite human head with amber neural intelligence. No text, no HUD, stable camera.",
+          "startImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-01-02-head-reconstruction.png",
+          "endImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-01-03-head-complete.png",
+          "output": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\clips\\c2r-v9-micro-01c.mp4",
+          "workflowJson": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\docs\\c2r-v9-micro-workflows\\c2r-v9-micro-01c.json",
+          "reused": true
+        }
+      ],
+      "output": {
+        "sceneVideo": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\c2r-v9-micro-pilot-01.mp4",
+        "frameDir": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\frames\\c2r-v9-micro-pilot\\01",
+        "frameCount": 99,
+        "lastFrame": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\rendered-last\\section-01-last.png",
+        "concatList": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\concat-01.txt"
+      }
+    },
+    {
+      "id": "02",
+      "title": "Eye entry and neural arrival",
+      "clips": [
+        {
+          "id": "02a",
+          "start": "section-02-00-head-complete.png",
+          "end": "section-02-01-eye-closeup.png",
+          "seed": 250904,
+          "prompt": "Full-width cinematic realistic premium camera move on a pure black void. The left half remains pure empty black. On the right half, the camera slowly pushes toward the glowing amber eye of the graphite human head. The face stays stable while the eye grows larger and more detailed. The pupil becomes a deep optical-fiber tunnel, preparing the viewer to enter. Smooth dolly-in, no cut, no text, no HUD.",
+          "startImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-02-00-head-complete.png",
+          "endImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-02-01-eye-closeup.png",
+          "output": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\clips\\c2r-v9-micro-02a.mp4",
+          "workflowJson": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\docs\\c2r-v9-micro-workflows\\c2r-v9-micro-02a.json",
+          "reused": true
+        },
+        {
+          "id": "02b",
+          "start": "section-02-01-eye-closeup.png",
+          "end": "section-02-02-brain-architecture.png",
+          "seed": 250905,
+          "prompt": "Full-width cinematic realistic premium camera travel on a pure black void. The left half remains pure empty black. On the right half, the camera enters the amber pupil and travels through a tunnel of optical fibers and neural filaments. The tunnel opens into a clear glowing brain architecture made of organized amber neural pathways. Smooth continuous forward motion through the eye into the brain, no simple dissolve, no text, no HUD.",
+          "startImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-02-01-eye-closeup.png",
+          "endImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-02-02-brain-architecture.png",
+          "output": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\clips\\c2r-v9-micro-02b.mp4",
+          "workflowJson": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\docs\\c2r-v9-micro-workflows\\c2r-v9-micro-02b.json",
+          "reused": true
+        }
+      ],
+      "output": {
+        "sceneVideo": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\c2r-v9-micro-pilot-02.mp4",
+        "frameDir": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\frames\\c2r-v9-micro-pilot\\02",
+        "frameCount": 66,
+        "lastFrame": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\rendered-last\\section-02-last.png",
+        "concatList": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\concat-02.txt"
+      }
+    },
+    {
+      "id": "03",
+      "title": "Clarify chaotic neural intelligence",
+      "clips": [
+        {
+          "id": "03a",
+          "start": "section-03-00-brain-from-scene02-last.png",
+          "end": "section-03-01-chaotic-brain.png",
+          "seed": 250906,
+          "prompt": "Full-width cinematic realistic premium neural transformation on a pure black void. The left half remains pure empty black. On the right half, the newly revealed futuristic brain expands into an overloaded chaotic neural system. Amber fiber-optic links multiply, cross, and tangle in every direction. The brain remains recognizable while its connections become dense and disorganized. Smooth physical growth of neural threads, no text, no HUD.",
+          "startImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-03-00-brain-from-scene02-last.png",
+          "endImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-03-01-chaotic-brain.png",
+          "output": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\clips\\c2r-v9-micro-03a.mp4",
+          "workflowJson": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\docs\\c2r-v9-micro-workflows\\c2r-v9-micro-03a.json",
+          "reused": true
+        },
+        {
+          "id": "03b",
+          "start": "section-03-01-chaotic-brain.png",
+          "end": "section-03-02-organized-brain.png",
+          "seed": 250907,
+          "prompt": "Full-width cinematic realistic premium clarification sequence on a pure black void. The left half remains pure empty black. On the right half, chaotic neural connections begin sorting themselves. Unnecessary amber threads fade away, crossing wires untangle, useful pathways remain, and the whole graphite brain becomes clean, logical, and organized. The final structure shows clear visual neural routes without any text or symbols.",
+          "startImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-03-01-chaotic-brain.png",
+          "endImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-03-02-organized-brain.png",
+          "output": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\clips\\c2r-v9-micro-03b.mp4",
+          "workflowJson": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\docs\\c2r-v9-micro-workflows\\c2r-v9-micro-03b.json",
+          "reused": true
+        }
+      ],
+      "output": {
+        "sceneVideo": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\c2r-v9-micro-pilot-03.mp4",
+        "frameDir": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\frames\\c2r-v9-micro-pilot\\03",
+        "frameCount": 66,
+        "lastFrame": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\rendered-last\\section-03-last.png",
+        "concatList": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\concat-03.txt"
+      }
+    },
+    {
+      "id": "04",
+      "title": "Accelerate organized pathways",
+      "clips": [
+        {
+          "id": "04a",
+          "start": "section-03-02-organized-brain.png",
+          "end": "section-04-01-accelerating-streams.png",
+          "seed": 250908,
+          "prompt": "Full-width cinematic realistic premium acceleration sequence on a pure black void. The left half remains pure empty black. On the right half, the organized graphite brain begins sending small amber pulses through its clean pathways. Pulses stretch into flowing streams; streams curve into faster luminous routes while the brain silhouette remains visible. Smooth energy acceleration, no labels, no numbers, no HUD.",
+          "startImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-03-02-organized-brain.png",
+          "endImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-04-01-accelerating-streams.png",
+          "output": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\clips\\c2r-v9-micro-04a.mp4",
+          "workflowJson": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\docs\\c2r-v9-micro-workflows\\c2r-v9-micro-04a.json",
+          "reused": true
+        },
+        {
+          "id": "04b",
+          "start": "section-04-01-accelerating-streams.png",
+          "end": "section-04-02-neural-superhighways.png",
+          "seed": 250909,
+          "prompt": "Full-width cinematic realistic premium speed transformation on a pure black void. The left half remains pure empty black. On the right half, amber neural streams accelerate into ultra-fast information superhighways. Metallic nodes and fiber routes stretch forward, bottlenecks vanish, and the system becomes fluid with continuous luminous flow. No simple dissolve, no text, no HUD, no readable symbols.",
+          "startImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-04-01-accelerating-streams.png",
+          "endImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-04-02-neural-superhighways.png",
+          "output": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\clips\\c2r-v9-micro-04b.mp4",
+          "workflowJson": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\docs\\c2r-v9-micro-workflows\\c2r-v9-micro-04b.json",
+          "reused": true
+        }
+      ],
+      "output": {
+        "sceneVideo": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\c2r-v9-micro-pilot-04.mp4",
+        "frameDir": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\frames\\c2r-v9-micro-pilot\\04",
+        "frameCount": 66,
+        "lastFrame": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\rendered-last\\section-04-last.png",
+        "concatList": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\concat-04.txt"
+      }
+    },
+    {
+      "id": "05",
+      "title": "Solidify with hexagonal protection",
+      "clips": [
+        {
+          "id": "05a",
+          "start": "section-04-02-neural-superhighways.png",
+          "end": "section-05-01-hex-shield-emerging.png",
+          "seed": 250910,
+          "prompt": "Full-width cinematic realistic premium protection sequence on a pure black void. The left half remains pure empty black. On the right half, the fast neural superhighway system begins to solidify. Transparent amber hexagonal cells appear around the flow, graphite connector nodes lock into place, and a partial protective shell grows outward while energy keeps moving inside. No text, no HUD, no symbols.",
+          "startImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-04-02-neural-superhighways.png",
+          "endImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-05-01-hex-shield-emerging.png",
+          "output": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\clips\\c2r-v9-micro-05a.mp4",
+          "workflowJson": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\docs\\c2r-v9-micro-workflows\\c2r-v9-micro-05a.json",
+          "reused": true
+        },
+        {
+          "id": "05b",
+          "start": "section-05-01-hex-shield-emerging.png",
+          "end": "section-05-02-protective-dome.png",
+          "seed": 250911,
+          "prompt": "Full-width cinematic realistic premium fortification sequence on a pure black void. The left half remains pure empty black. On the right half, the partial amber hexagonal shield expands and closes into a complete luminous protective dome around the intelligent neural system. Hex cells connect, reinforcement nodes lock, and the inner energy continues flowing safely. Smooth dome construction, no text, no HUD, no logo.",
+          "startImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-05-01-hex-shield-emerging.png",
+          "endImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-05-02-protective-dome.png",
+          "output": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\clips\\c2r-v9-micro-05b.mp4",
+          "workflowJson": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\docs\\c2r-v9-micro-workflows\\c2r-v9-micro-05b.json",
+          "reused": true
+        }
+      ],
+      "output": {
+        "sceneVideo": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\c2r-v9-micro-pilot-05.mp4",
+        "frameDir": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\frames\\c2r-v9-micro-pilot\\05",
+        "frameCount": 66,
+        "lastFrame": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\rendered-last\\section-05-last.png",
+        "concatList": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\concat-05.txt"
+      }
+    },
+    {
+      "id": "06",
+      "title": "Transform protected system into KPI graphics",
+      "clips": [
+        {
+          "id": "06a",
+          "start": "section-06-00-dome-from-scene05-last.png",
+          "end": "section-06-01-data-kpi-emerging.png",
+          "seed": 250912,
+          "prompt": "Full-width cinematic realistic premium data transformation on a pure black void. The left half remains pure empty black. On the right half, the protected hexagonal dome opens slightly and releases raw abstract data streams. Amber particles, luminous curves, unlabeled bars, circular gauge arcs without numbers, heat-map squares, and node clusters begin forming around a graphite core. No readable text, no numbers, no labels, no HUD.",
+          "startImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-06-00-dome-from-scene05-last.png",
+          "endImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-06-01-data-kpi-emerging.png",
+          "output": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\clips\\c2r-v9-micro-06a.mp4",
+          "workflowJson": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\docs\\c2r-v9-micro-workflows\\c2r-v9-micro-06a.json",
+          "reused": true
+        },
+        {
+          "id": "06b",
+          "start": "section-06-01-data-kpi-emerging.png",
+          "end": "section-06-02-kpi-command-center.png",
+          "seed": 250913,
+          "prompt": "Full-width cinematic realistic premium analytics transformation on a pure black void. The left half remains pure empty black. On the right half, raw data particles converge into a clear abstract KPI command center. Visual indicators become organized as bars, curves, gauge arcs, heat-map blocks, and node clusters, all without labels or numbers. A central decision core glows amber. No text, no HUD, no symbols.",
+          "startImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-06-01-data-kpi-emerging.png",
+          "endImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-06-02-kpi-command-center.png",
+          "output": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\clips\\c2r-v9-micro-06b.mp4",
+          "workflowJson": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\docs\\c2r-v9-micro-workflows\\c2r-v9-micro-06b.json",
+          "reused": true
+        }
+      ],
+      "output": {
+        "sceneVideo": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\c2r-v9-micro-pilot-06.mp4",
+        "frameDir": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\frames\\c2r-v9-micro-pilot\\06",
+        "frameCount": 66,
+        "lastFrame": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\rendered-last\\section-06-last.png",
+        "concatList": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\concat-06.txt"
+      }
+    },
+    {
+      "id": "07",
+      "title": "Simplify KPI cockpit into clear design",
+      "clips": [
+        {
+          "id": "07a",
+          "start": "section-06-02-kpi-command-center.png",
+          "end": "section-07-01-simplifying-cockpit.png",
+          "seed": 250914,
+          "prompt": "Full-width cinematic realistic premium simplification sequence on a pure black void. The left half remains pure empty black. On the right half, the complex abstract KPI command center starts simplifying. Redundant bars, curves, and gauge arcs fade away; remaining analytics elements reorganize into a calmer geometric cockpit. Hierarchy becomes visible through spacing, scale, and amber light only. No text, no numbers, no UI words.",
+          "startImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-06-02-kpi-command-center.png",
+          "endImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-07-01-simplifying-cockpit.png",
+          "output": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\clips\\c2r-v9-micro-07a.mp4",
+          "workflowJson": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\docs\\c2r-v9-micro-workflows\\c2r-v9-micro-07a.json",
+          "reused": true
+        },
+        {
+          "id": "07b",
+          "start": "section-07-01-simplifying-cockpit.png",
+          "end": "section-07-02-clean-interface.png",
+          "seed": 250915,
+          "prompt": "Full-width cinematic realistic premium clarity sequence on a pure black void. The left half remains pure empty black. On the right half, the simplifying cockpit becomes ultra-clean and minimal. Abstract visual analytics lock into an elegant balanced layout with purposeful geometry, smooth rings, clean bars without labels, and refined amber/cyan light. No text, no numbers, no HUD, no readable symbols.",
+          "startImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-07-01-simplifying-cockpit.png",
+          "endImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-07-02-clean-interface.png",
+          "output": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\clips\\c2r-v9-micro-07b.mp4",
+          "workflowJson": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\docs\\c2r-v9-micro-workflows\\c2r-v9-micro-07b.json",
+          "reused": true
+        }
+      ],
+      "output": {
+        "sceneVideo": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\c2r-v9-micro-pilot-07.mp4",
+        "frameDir": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\frames\\c2r-v9-micro-pilot\\07",
+        "frameCount": 66,
+        "lastFrame": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\rendered-last\\section-07-last.png",
+        "concatList": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\concat-07.txt"
+      }
+    },
+    {
+      "id": "08",
+      "title": "Continuous improvement and system fusion",
+      "clips": [
+        {
+          "id": "08a",
+          "start": "section-07-02-clean-interface.png",
+          "end": "section-08-01-fusion-upgrade-loop.png",
+          "seed": 250916,
+          "prompt": "Full-width cinematic realistic premium evolution sequence on a pure black void. The left half remains pure empty black. On the right half, the clean analytics cockpit begins upgrading itself. Circular improvement loops orbit the system, abstract KPI structures merge with a graphite cube core, brain-like fiber networks grow, and hexagonal shield fragments reappear. Smooth continuous improvement, no text, no HUD.",
+          "startImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-07-02-clean-interface.png",
+          "endImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-08-01-fusion-upgrade-loop.png",
+          "output": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\clips\\c2r-v9-micro-08a.mp4",
+          "workflowJson": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\docs\\c2r-v9-micro-workflows\\c2r-v9-micro-08a.json",
+          "reused": true
+        },
+        {
+          "id": "08b",
+          "start": "section-08-01-fusion-upgrade-loop.png",
+          "end": "section-08-02-ultimate-system.png",
+          "seed": 250917,
+          "prompt": "Full-width cinematic realistic premium fusion sequence on a pure black void. The left half remains pure empty black. On the right half, cube logic, brain intelligence, abstract KPI graphics, and protected hexagonal architecture fuse into one ultimate intelligent technological entity. Components lock together, amber energy stabilizes, and the system becomes complete and powerful. No text, no numbers, no HUD.",
+          "startImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-08-01-fusion-upgrade-loop.png",
+          "endImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-08-02-ultimate-system.png",
+          "output": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\clips\\c2r-v9-micro-08b.mp4",
+          "workflowJson": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\docs\\c2r-v9-micro-workflows\\c2r-v9-micro-08b.json",
+          "reused": true
+        }
+      ],
+      "output": {
+        "sceneVideo": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\c2r-v9-micro-pilot-08.mp4",
+        "frameDir": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\frames\\c2r-v9-micro-pilot\\08",
+        "frameCount": 66,
+        "lastFrame": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\rendered-last\\section-08-last.png",
+        "concatList": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\concat-08.txt"
+      }
+    },
+    {
+      "id": "09",
+      "title": "Validation and two visual paths",
+      "clips": [
+        {
+          "id": "09a",
+          "start": "section-08-02-ultimate-system.png",
+          "end": "section-09-01-compressing-open-cube.png",
+          "seed": 250918,
+          "prompt": "Full-width cinematic realistic premium validation sequence on a pure black void. The left half remains pure empty black. On the right half, the ultimate intelligent system compresses inward into an advanced graphite cube. Amber validation rings orbit the cube and geometric light pulses stabilize it. The cube begins opening, exposing a warm amber inner core. No text, no labels, no HUD, no symbols.",
+          "startImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-08-02-ultimate-system.png",
+          "endImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-09-01-compressing-open-cube.png",
+          "output": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\clips\\c2r-v9-micro-09a.mp4",
+          "workflowJson": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\docs\\c2r-v9-micro-workflows\\c2r-v9-micro-09a.json",
+          "reused": true
+        },
+        {
+          "id": "09b",
+          "start": "section-09-01-compressing-open-cube.png",
+          "end": "section-09-02-two-paths.png",
+          "seed": 250919,
+          "prompt": "Full-width cinematic realistic premium final gateway sequence on a pure black void. The left half remains pure empty black. On the right half, the graphite cube opens into a portal gateway. Two luminous visual pathways emerge from the cube in opposite directions, differentiated only by amber and cyan light, shape, and motion trails. No words, no MATRIX, no PROJECTS, no labels, no HUD.",
+          "startImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-09-01-compressing-open-cube.png",
+          "endImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-09-02-two-paths.png",
+          "output": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\clips\\c2r-v9-micro-09b.mp4",
+          "workflowJson": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\docs\\c2r-v9-micro-workflows\\c2r-v9-micro-09b.json",
+          "reused": true
+        }
+      ],
+      "output": {
+        "sceneVideo": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\c2r-v9-micro-pilot-09.mp4",
+        "frameDir": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\frames\\c2r-v9-micro-pilot\\09",
+        "frameCount": 66,
+        "lastFrame": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\rendered-last\\section-09-last.png",
+        "concatList": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-micro-pilot\\concat-09.txt"
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+interface:
+  display_name: "WebGL Right Video"
+  short_description: "Right-side AI video for WebGL sites"
+  brand_color: "#0EA5E9"
+  default_prompt: "Use $webgl-right-video to plan a 16:9 WebGL scroll-video scene with animation on the right."
+policy:
+  allow_implicit_invocation: true

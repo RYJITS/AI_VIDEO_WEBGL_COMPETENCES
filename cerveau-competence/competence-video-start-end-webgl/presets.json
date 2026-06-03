@@ -1,0 +1,74 @@
+{
+  "presets": {
+    "rapid": {
+      "label": "Test rapide transitions",
+      "frames": 33,
+      "fps": 12,
+      "steps": 10,
+      "cfg": 5,
+      "shift": 8,
+      "durationSeconds": 2.75,
+      "generationMinutesMin": 5,
+      "generationMinutesMax": 6,
+      "use": "Tester direction, raccords, composition et prompt sans viser la qualite finale."
+    },
+    "mobile": {
+      "label": "Qualite mobile",
+      "frames": 33,
+      "fps": 12,
+      "steps": 14,
+      "cfg": 5,
+      "shift": 8,
+      "durationSeconds": 2.75,
+      "generationMinutesMin": 6,
+      "generationMinutesMax": 7,
+      "use": "Premier seuil exploitable ou le flou/nuage de particules devient acceptable."
+    },
+    "desktop": {
+      "label": "Qualite desktop",
+      "frames": 49,
+      "fps": 24,
+      "steps": 16,
+      "cfg": 5,
+      "shift": 8,
+      "durationSeconds": 2.04,
+      "generationMinutesMin": 10,
+      "generationMinutesMax": 13,
+      "use": "Candidat desktop plus fluide et plus net."
+    },
+    "optimum": {
+      "label": "Optimum court valide",
+      "frames": 33,
+      "fps": 24,
+      "steps": 14,
+      "cfg": 5,
+      "shift": 8,
+      "durationSeconds": 1.375,
+      "generationMinutesMin": 6,
+      "generationMinutesMax": 7,
+      "use": "Reglage court demande par l'utilisateur: 14 steps, 33 frames, 24 fps."
+    }
+  },
+  "keyframeHeuristics": {
+    "simple": {
+      "keyframesPerSection": 2,
+      "microClipsPerSection": 1,
+      "examples": ["activation", "camera push", "light intensity change"]
+    },
+    "medium": {
+      "keyframesPerSection": 3,
+      "microClipsPerSection": 2,
+      "examples": ["opening", "organizing", "locking", "one related form transition"]
+    },
+    "complex": {
+      "keyframesPerSection": 5,
+      "microClipsPerSection": 4,
+      "examples": ["cube to human head", "eye entry to brain", "dashboard to architecture"]
+    },
+    "very-complex": {
+      "keyframesPerSection": 6,
+      "microClipsPerSection": 5,
+      "examples": ["several mechanisms plus camera travel", "large semantic morph"]
+    }
+  }
+}

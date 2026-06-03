@@ -1,0 +1,60 @@
+{
+  "variant": "c2r-v9-frame-test-65",
+  "generatedAt": "2026-06-02T11:03:25.081Z",
+  "sourceManifest": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\docs\\C2R_V9_MICRO_PILOT_MANIFEST.json",
+  "options": {
+    "only": "05",
+    "frames": 65,
+    "fps": 12,
+    "steps": 8,
+    "cfg": 3,
+    "overwrite": true,
+    "dryRun": false
+  },
+  "output": {
+    "variant": "c2r-v9-frame-test-65",
+    "videoRoot": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-frame-test-65",
+    "clipDir": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-frame-test-65\\clips",
+    "frameRoot": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\frames\\c2r-v9-frame-test-65",
+    "workflowDir": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\docs\\c2r-v9-frame-test-65-workflows"
+  },
+  "scene": {
+    "id": "05",
+    "title": "Solidify with hexagonal protection",
+    "clips": [
+      {
+        "id": "05a",
+        "start": "section-04-02-neural-superhighways.png",
+        "end": "section-05-01-hex-shield-emerging.png",
+        "seed": 257410,
+        "prompt": "Full-width cinematic realistic premium protection sequence on a pure black void. The left half remains pure empty black. On the right half, the fast neural superhighway system begins to solidify. Transparent amber hexagonal cells appear around the flow, graphite connector nodes lock into place, and a partial protective shell grows outward while energy keeps moving inside. No text, no HUD, no symbols.",
+        "startImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-04-02-neural-superhighways.png",
+        "endImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-05-01-hex-shield-emerging.png",
+        "output": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-frame-test-65\\clips\\c2r-v9-frame-test-65-05a.mp4",
+        "workflowJson": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\docs\\c2r-v9-frame-test-65-workflows\\c2r-v9-frame-test-65-05a.json",
+        "reused": false,
+        "scene": "05"
+      },
+      {
+        "id": "05b",
+        "start": "section-05-01-hex-shield-emerging.png",
+        "end": "section-05-02-protective-dome.png",
+        "seed": 257411,
+        "prompt": "Full-width cinematic realistic premium fortification sequence on a pure black void. The left half remains pure empty black. On the right half, the partial amber hexagonal shield expands and closes into a complete luminous protective dome around the intelligent neural system. Hex cells connect, reinforcement nodes lock, and the inner energy continues flowing safely. Smooth dome construction, no text, no HUD, no logo.",
+        "startImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-05-01-hex-shield-emerging.png",
+        "endImage": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\images\\c2r-v9-micro-keyframes\\normalized\\section-05-02-protective-dome.png",
+        "output": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-frame-test-65\\clips\\c2r-v9-frame-test-65-05b.mp4",
+        "workflowJson": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\docs\\c2r-v9-frame-test-65-workflows\\c2r-v9-frame-test-65-05b.json",
+        "reused": false,
+        "scene": "05"
+      }
+    ],
+    "output": {
+      "sceneVideo": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-frame-test-65\\c2r-v9-frame-test-65-05.mp4",
+      "frameDir": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\frames\\c2r-v9-frame-test-65\\05",
+      "concatList": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\public\\generated\\videos\\c2r-v9-frame-test-65\\concat-65-05.txt",
+      "frameCount": 130,
+      "contactSheet": "D:\\00_Cerveau_IA\\Projet\\CV_WEBGL_SCROLL_VIDEO_ALPHA_SITE\\docs\\c2r-v9-frame-test-65-scene-05.jpg"
+    }
+  }
+}

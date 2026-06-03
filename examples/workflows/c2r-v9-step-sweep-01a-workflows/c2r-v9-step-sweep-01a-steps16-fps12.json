@@ -1,0 +1,206 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "5": {
+    "class_type": "ModelSamplingSD3",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "shift": 8
+    }
+  },
+  "6": {
+    "class_type": "ModelSamplingSD3",
+    "inputs": {
+      "model": [
+        "2",
+        0
+      ],
+      "shift": 8
+    }
+  },
+  "7": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+      "type": "wan",
+      "device": "default"
+    }
+  },
+  "8": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [
+        "7",
+        0
+      ],
+      "text": "A premium graphite black metallic cube transforms through solid mechanical decomposition only. The cube opens outward from all visible faces into large rigid graphite panels and hard-edged mechanical chunks. Every fragment is solid, sharp, textured, and separated; each piece keeps crisp graphite material with amber cracks. No fine particles, no dust, no smoke, no glowing cloud, no liquid, no fog, no haze. Amber light exists only as thin precise seams inside cracks and as sharp connection lines between solid panels. The background is continuous deep black empty space across the full 16:9 frame, not a vertical wall, not a foreground mask. No intact flat side slab remains in front of the transformation. Stable camera, subject in the right two thirds, generous empty black space on the left, no text, no HUD, no symbols."
+    }
+  },
+  "9": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [
+        "7",
+        0
+      ],
+      "text": "particles, particle cloud, dust, orange dust, orange fog, smoke, mist, haze, glowing cloud, soft glow blob, blur transition, soft dissolve, crossfade, smeared motion, blurry particles, defocus, motion blur, liquid morph, vertical black wall, foreground black mask, black panel in front, occlusion slab, intact flat side wall, readable text, fake text, letters, numbers, logo, watermark, HUD, interface, cyberpunk city, low quality"
+    }
+  },
+  "10": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "wan_2.1_vae.safetensors"
+    }
+  },
+  "11": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "codex-wan22/c2r-v9-step-sweep-01a-steps16-fps12-start.png"
+    }
+  },
+  "12": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "codex-wan22/c2r-v9-step-sweep-01a-steps16-fps12-end.png"
+    }
+  },
+  "13": {
+    "class_type": "WanFirstLastFrameToVideo",
+    "inputs": {
+      "positive": [
+        "8",
+        0
+      ],
+      "negative": [
+        "9",
+        0
+      ],
+      "vae": [
+        "10",
+        0
+      ],
+      "width": 1024,
+      "height": 576,
+      "length": 33,
+      "batch_size": 1,
+      "start_image": [
+        "11",
+        0
+      ],
+      "end_image": [
+        "12",
+        0
+      ]
+    }
+  },
+  "14": {
+    "class_type": "KSamplerAdvanced",
+    "inputs": {
+      "model": [
+        "5",
+        0
+      ],
+      "add_noise": "enable",
+      "noise_seed": 470101,
+      "steps": 16,
+      "cfg": 5,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "positive": [
+        "13",
+        0
+      ],
+      "negative": [
+        "13",
+        1
+      ],
+      "latent_image": [
+        "13",
+        2
+      ],
+      "start_at_step": 0,
+      "end_at_step": 8,
+      "return_with_leftover_noise": "enable"
+    }
+  },
+  "15": {
+    "class_type": "KSamplerAdvanced",
+    "inputs": {
+      "model": [
+        "6",
+        0
+      ],
+      "add_noise": "disable",
+      "noise_seed": 470101,
+      "steps": 16,
+      "cfg": 5,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "positive": [
+        "13",
+        0
+      ],
+      "negative": [
+        "13",
+        1
+      ],
+      "latent_image": [
+        "14",
+        0
+      ],
+      "start_at_step": 8,
+      "end_at_step": 16,
+      "return_with_leftover_noise": "disable"
+    }
+  },
+  "16": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "15",
+        0
+      ],
+      "vae": [
+        "10",
+        0
+      ]
+    }
+  },
+  "17": {
+    "class_type": "CreateVideo",
+    "inputs": {
+      "images": [
+        "16",
+        0
+      ],
+      "fps": 12
+    }
+  },
+  "18": {
+    "class_type": "SaveVideo",
+    "inputs": {
+      "video": [
+        "17",
+        0
+      ],
+      "filename_prefix": "c2r-v9-step-sweep-01a-steps16-fps12",
+      "format": "mp4",
+      "codec": "h264"
+    }
+  }
+}
