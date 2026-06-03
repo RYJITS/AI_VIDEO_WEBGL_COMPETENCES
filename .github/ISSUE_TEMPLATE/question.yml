@@ -1,0 +1,34 @@
+name: Question / Support
+description: Poser une question ou demander de l'aide sur l'utilisation, la configuration ou les competences.
+title: "[Question] "
+labels: ["question"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: Decris ta question ou ton besoin d'aide.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexte
+      description: Environnement, version, etapes suivies ou fichiers concernes.
+      placeholder: |
+        - Version: ...
+        - Environnement: Windows 11, ComfyUI ..., Python ..., Node ...
+        - Etapes: 1. ... 2. ... 3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: media
+    attributes:
+      label: Captures ou logs utiles
+      description: Ajouter uniquement des captures, extraits de logs ou liens sans secrets.
+  - type: markdown
+    attributes:
+      value: |
+        Avant de poster:
+        - Consulter le README et les issues existantes.
+        - Pour un probleme reproductible, utiliser plutot le template Bug report.
