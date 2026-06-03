@@ -1,0 +1,71 @@
+name: Workflow setup request
+description: Demander de l'aide pour configurer un workflow ComfyUI/Wan/LTX ou integrer une nouvelle fonctionnalite.
+title: "[Workflow] "
+labels: ["workflow", "help wanted"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexte
+      description: Decris le workflow souhaite ou le probleme rencontre.
+      placeholder: |
+        Je souhaite configurer un workflow pour ...
+        Mon objectif est de ...
+    validations:
+      required: true
+  - type: textarea
+    id: current_setup
+    attributes:
+      label: Configuration actuelle
+      description: Decris ton environnement et ce que tu as deja tente.
+      placeholder: |
+        ComfyUI version: ...
+        Wan/LTX version: ...
+        GPU: ...
+        Etapes deja realisees: ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected_workflow
+    attributes:
+      label: Workflow souhaite
+      description: Decris le workflow ideal ou partage un schema.
+      placeholder: |
+        Je veux un workflow qui fait ...
+        Avec les etapes suivantes: ...
+    validations:
+      required: true
+  - type: textarea
+    id: errors
+    attributes:
+      label: Erreurs ou blocages
+      description: Partage les messages d'erreur ou les comportements inattendus.
+      placeholder: |
+        Erreur: ...
+        Comportement: ...
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environnement detaille
+      description: Systeme d'exploitation, versions des outils, ressources utilisees.
+      placeholder: "Windows 11, ComfyUI 0.9.x, Python 3.11, RTX 4070, 32GB RAM"
+    validations:
+      required: true
+  - type: textarea
+    id: media
+    attributes:
+      label: Fichiers utiles
+      description: Partage des captures d'ecran, workflows JSON ou logs (sans secrets).
+      placeholder: |
+        [Coller les logs ici]
+        [Glisser-deposer les fichiers ici]
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Verifications prealables
+      description: As-tu deja consulte ces ressources ?
+      options:
+        - label: Documentation officielle ComfyUI
+        - label: Exemples de workflows fournis
+        - label: Forum Wan/LTX
+        - label: Wiki du projet

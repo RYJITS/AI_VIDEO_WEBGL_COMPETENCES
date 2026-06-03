@@ -1,0 +1,60 @@
+WAN LTX Terms
+
+Termes generaux
+
+- WAN: Wide Area Network
+- LTX: Local Terminal eXtension
+- API: Application Programming Interface
+- SDK: Software Development Kit
+- GPU: Graphics Processing Unit
+- CPU: Central Processing Unit
+- RAM: Random Access Memory
+- VRAM: Video RAM
+- FPS: Frames Per Second
+- HDR: High Dynamic Range
+- UI: User Interface
+- UX: User Experience
+- JSON: JavaScript Object Notation
+- XML: eXtensible Markup Language
+- HTTP: HyperText Transfer Protocol
+- HTTPS: HTTP Secure
+- FTP: File Transfer Protocol
+- SSH: Secure Shell
+- VPN: Virtual Private Network
+- LAN: Local Area Network
+- WLAN: Wireless LAN
+- QoS: Quality of Service
+- RTT: Round-Trip Time
+- TTL: Time To Live
+- DNS: Domain Name System
+- DHCP: Dynamic Host Configuration Protocol
+- NAT: Network Address Translation
+- CIDR: Classless Inter-Domain Routing
+- IP: Internet Protocol
+- TCP: Transmission Control Protocol
+- UDP: User Datagram Protocol
+- ICMP: Internet Control Message Protocol
+- ARP: Address Resolution Protocol
+- MAC: Media Access Control
+- VLAN: Virtual LAN
+- SAN: Storage Area Network
+- NAS: Network Attached Storage
+- RAID: Redundant Array of Independent Disks
+- NAS: Network Attached Storage
+- WAN LTX: Wide Area Network Local Terminal eXtension
+- LTX Server: Local Terminal eXtension Server
+- LTX Client: Local Terminal eXtension Client
+- LTX Protocol: Communication protocol for WAN LTX
+- LTX Gateway: Gateway for WAN LTX connections
+- LTX Bridge: Bridge for WAN LTX networks
+- LTX Tunnel: Secure tunnel for WAN LTX
+- LTX Encryption: Encryption for WAN LTX data
+- LTX Authentication: Authentication for WAN LTX users
+- LTX Authorization: Authorization for WAN LTX access
+- LTX Session: Session for WAN LTX connections
+- LTX Connection: Connection for WAN LTX networks
+- LTX Bandwidth: Bandwidth for WAN LTX data transfer
+- LTX Latency: Latency for WAN LTX connections
+- LTX Throughput: Throughput for WAN LTX data transfer
+- LTX Packet Loss: Packet loss for WAN LTX connections
+- LTX Jitter: Jitter for WAN LTX data transfer
